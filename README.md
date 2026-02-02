@@ -39,7 +39,7 @@ This system uses Natural Language Processing (NLP) and Machine Learning to predi
 ## 📁 Project Structure
 
 ```
-Healthcare-Disease-Prediction-System/
+Disease-Prediction-Model_Training/
 │
 ├── dataset/
 │   └── Symptom2Disease.csv          # Raw dataset (1,200 samples)
