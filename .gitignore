@@ -1,5 +1,46 @@
-*.pkl
-.github
-.vscode
-venv
-checkpoints
+# Python
+__pycache__/
+*$py.class
+*.pyc
+# Virtual Environment
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Models
+models/*.pkl
+
+# Temporary files
+*.tmp
+temp/
