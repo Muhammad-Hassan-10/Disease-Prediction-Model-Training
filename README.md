@@ -67,9 +67,6 @@ This system uses **Natural Language Processing (NLP)** and **Machine Learning** 
 ```
 Healthcare-Disease-Prediction-System/
 │
-├── database/
-│   └── predictions.db             # Auto-created on first run
-│
 ├── dataset/
 │   └── Symptom2Disease.csv        # Raw dataset (1,200 samples)
 │
@@ -114,27 +111,20 @@ Healthcare-Disease-Prediction-System/
 - Python 3.8 or higher
 - pip (Python package manager)
 
-### Step 1: Clone or Download Project
+### Setup Instructions
 
-```bash
-# If using git
-git clone https://github.com/Muhammad-Hassan-10/Healthcare-Disease-Prediction-WebApp
-cd Healthcare-Disease-Prediction-WebApp
+1. **Open the projet folder**
+   
+   ```bash
+   cd Healthcare-Disease-Prediction-System
+   ```
 
-# Or simply download and extract the ZIP file
-```
-
-### Step 2: Create Virtual Environment (Recommended)
-
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
+2. **Create virtual environment (recommended)**
+   
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 ### Step 3: Install Dependencies
 
