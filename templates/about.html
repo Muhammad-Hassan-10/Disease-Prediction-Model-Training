@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Disease Prediction System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/home">
+                <i class="fas fa-heartbeat me-2"></i>
+                HealthPredict
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/history">
+                            <i class="fas fa-history me-1"></i> History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">
+                            <i class="fas fa-info-circle me-1"></i> About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 mb-3">
+                <i class="fas fa-info-circle text-primary"></i>
+                About Our System
+            </h1>
+            <p class="lead text-muted">Learn how our AI-powered disease prediction system works</p>
+        </div>
+
+        <!-- System Overview -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center">
+                    <div class="about-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h2 class="mb-4">What is This System?</h2>
+                </div>
+                <p class="lead text-center mb-4">
+                    The Healthcare Disease Prediction System is an AI-powered application that uses 
+                    Machine Learning to predict potential diseases based on textual symptom descriptions.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5>Intelligent Analysis</h5>
+                                <p class="text-muted">Advanced NLP and machine learning algorithms analyze symptom patterns</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5>Multiple Disease Support</h5>
+                                <p class="text-muted">Trained on 24 different disease categories with balanced dataset</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5>High Accuracy</h5>
+                                <p class="text-muted">95-98% prediction accuracy using state-of-the-art ML models</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5>Actionable Insights</h5>
+                                <p class="text-muted">Provides precautions, recommendations, and risk assessments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center mb-4">
+                    <div class="about-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2>How Does It Work?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="bg-light rounded p-4">
+                            <i class="fas fa-edit fa-3x text-primary mb-3"></i>
+                            <h5>Step 1</h5>
+                            <p class="text-muted">User enters symptom description</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="bg-light rounded p-4">
+                            <i class="fas fa-magic fa-3x text-info mb-3"></i>
+                            <h5>Step 2</h5>
+                            <p class="text-muted">Text preprocessing & feature extraction</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="bg-light rounded p-4">
+                            <i class="fas fa-robot fa-3x text-success mb-3"></i>
+                            <h5>Step 3</h5>
+                            <p class="text-muted">ML model analyzes patterns</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="bg-light rounded p-4">
+                            <i class="fas fa-chart-line fa-3x text-warning mb-3"></i>
+                            <h5>Step 4</h5>
+                            <p class="text-muted">Results with confidence score</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ML Models -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center mb-4">
+                    <div class="about-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h2>Machine Learning Models</h2>
+                </div>
+                <p class="lead text-center mb-4">
+                    Our system was developed using comprehensive machine learning experimentation
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2 mb-3">Models Evaluated</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-star"></i> <strong> Neural Network (MLP) </strong> (Best Model - 96.67%)</li>
+                            <li><i class="fas fa-check"></i> Linear SVM (96.67%)</li>
+                            <li><i class="fas fa-check"></i> Random Forest (95%)</li>
+                            <li><i class="fas fa-check"></i> Logistic Regression (94.58%)</li>
+                            <li><i class="fas fa-check"></i> Naive Bayes (94.17%)</li>
+                            <li><i class="fas fa-check"></i> XGBoost (88.75%)</li>
+                            <li><i class="fas fa-check"></i> Gradient Boosting (82.92%)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="border-bottom pb-2 mb-3">Why Neural Network (MLP)?</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Excels at capturing complex patterns</li>
+                            <li><i class="fas fa-check-circle"></i> Learns feature representations automatically</li>
+                            <li><i class="fas fa-check-circle"></i> Scales well with large datasets</li>
+                            <li><i class="fas fa-check-circle"></i> Robust to noisy input data</li>
+                            <li><i class="fas fa-check-circle"></i> Achieved highest accuracy in evaluations</li>
+                            <li><i class="fas fa-check-circle"></i> Supports multi-class classification effectively</li>
+                            <li><i class="fas fa-check-circle"></i> Supports incremental learning and improvement</li>
+                            <li><i class="fas fa-check-circle"></i> Highly flexible for various text tasks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dataset & Training -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center mb-4">
+                    <div class="about-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h2>Training Dataset</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-item bg-light rounded p-3">
+                            <h3 class="text-primary mb-2">1,200</h3>
+                            <p class="text-muted mb-0">Total Samples</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-item bg-light rounded p-3">
+                            <h3 class="text-info mb-2">24</h3>
+                            <p class="text-muted mb-0">Disease Categories</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-item bg-light rounded p-3">
+                            <h3 class="text-success mb-2">50</h3>
+                            <p class="text-muted mb-0">Samples per Disease</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="stat-item bg-light rounded p-3">
+                            <h3 class="text-warning mb-2">100%</h3>
+                            <p class="text-muted mb-0">Balanced Dataset</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h5>Diseases Covered:</h5>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Acne</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Arthritis</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Bronchial Asthma</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Cervical Spondylosis</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Chicken Pox</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Common Cold</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Dengue</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Diabetes</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Dimorphic Hemorrhoids</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Fungal Infection</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> GERD</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Hypertension</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Impetigo</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Jaundice</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Malaria</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Migraine</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Peptic Ulcer</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Pneumonia</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Psoriasis</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Typhoid</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> UTI</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Varicose Veins</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Allergy</li>
+                                <li><i class="fas fa-circle text-primary me-2" style="font-size: 8px;"></i> Drug Reaction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Assessment -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center mb-4">
+                    <div class="about-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h2>Risk Level Assessment</h2>
+                </div>
+                <p class="text-center mb-4">
+                    Our system categorizes predictions into three risk levels based on confidence scores
+                </p>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="border border-danger rounded p-4 text-center">
+                            <i class="fas fa-exclamation-circle fa-3x text-danger mb-3"></i>
+                            <h4 class="text-danger">High Risk</h4>
+                            <p class="text-muted">Confidence ≥ 75%</p>
+                            <p class="small">Strong symptom-disease match. Immediate medical consultation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="border border-warning rounded p-4 text-center">
+                            <i class="fas fa-exclamation-triangle fa-3x text-warning mb-3"></i>
+                            <h4 class="text-warning">Medium Risk</h4>
+                            <p class="text-muted">50% ≤ Confidence < 75%</p>
+                            <p class="small">Moderate symptom correlation. Monitor symptoms and consult if worsens.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="border border-success rounded p-4 text-center">
+                            <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
+                            <h4 class="text-success">Low Risk</h4>
+                            <p class="text-muted">Confidence < 50%</p>
+                            <p class="small">Symptoms may be mild or non-specific. General health monitoring advised.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="about-section">
+            <div class="alert alert-danger shadow-lg" role="alert">
+                <h4 class="alert-heading">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    Important Medical Disclaimer
+                </h4>
+                <hr>
+                <p class="mb-2"><strong>This system is for educational and informational purposes only.</strong></p>
+                <ul class="mb-2">
+                    <li>Not a substitute for professional medical diagnosis or treatment</li>
+                    <li>Does not claim 100% accuracy in predictions</li>
+                    <li>Should not be used for emergency medical situations</li>
+                    <li>Does not provide critical diagnosis support</li>
+                    <li>AI predictions should be validated by healthcare professionals</li>
+                </ul>
+                <p class="mb-0">
+                    <strong>Always consult a qualified healthcare provider</strong> for proper diagnosis and treatment. 
+                    In case of medical emergency, call emergency services immediately.
+                </p>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="about-section">
+            <div class="about-card">
+                <div class="text-center mb-4">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h2>Technology Stack</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <h5 class="border-bottom pb-2">Backend</h5>
+                        <ul class="feature-list">
+                            <li><i class="fab fa-python text-primary"></i> Python 3.14.2</li>
+                            <li><i class="fas fa-flask text-success"></i> Flask Web Framework</li>
+                            <li><i class="fas fa-brain text-info"></i> Scikit-learn (ML)</li>
+                            <li><i class="fas fa-database text-warning"></i> SQLite Database</li>
+                            <li><i class="fas fa-language text-primary"></i> NLTK (NLP)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h5 class="border-bottom pb-2">Frontend</h5>
+                        <ul class="feature-list">
+                            <li><i class="fab fa-html5 text-danger"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt text-primary"></i> CSS3</li>
+                            <li><i class="fab fa-bootstrap text-purple"></i> Bootstrap 5</li>
+                            <li><i class="fab fa-js text-warning"></i> JavaScript</li>
+                            <li><i class="fas fa-icons text-info"></i> Font Awesome Icons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">
+                <i class="fas fa-heartbeat me-2"></i>
+                Healthcare Disease Prediction System
+            </p>
+            <p class="mb-0">
+                © 2026 | AI-Powered Health Insights | Educational Purpose Only
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
