@@ -65,7 +65,7 @@ This system uses **Natural Language Processing (NLP)** and **Machine Learning** 
 ## 📁 Project Structure
 
 ```
-Healthcare-Disease-Prediction-System/
+Healthcare-Disease-Prediction-WebApp/
 │
 ├── database
 │   └── predictions.db             # Auto-generated
@@ -119,7 +119,8 @@ Healthcare-Disease-Prediction-System/
 1. **Open the projet folder**
    
    ```bash
-   cd Healthcare-Disease-Prediction-System
+   git clone https://github.com/hassancodebase/Healthcare-Disease-Prediction-WebApp
+   cd Healthcare-Disease-Prediction-WebApp
    ```
 
 2. **Create virtual environment (recommended)**
@@ -481,6 +482,7 @@ This project is for educational purposes. Please ensure you have appropriate per
 - Dataset: [Symptom2Disease on Kaggle](https://www.kaggle.com/datasets/niyarrbarman/symptom2disease)
 - Built with open-source ML libraries
 - Inspired by medical NLP research
+- Auhor: **Muhammad Hassan**
 
 ---
 
@@ -498,12 +500,10 @@ This project is for educational purposes. Please ensure you have appropriate per
 
 ---
 
-**🎉 Your Healthcare Disease Prediction System is ready to use!**
-
 *Built with ❤️ using Flask, Bootstrap, and Machine Learning*
 
 ---
 
-**Last Updated**: January 2024  
+**Last Updated**: 09 Feburary 2024  
 **Version**: 1.0.0  
 **Status**: Production Ready
