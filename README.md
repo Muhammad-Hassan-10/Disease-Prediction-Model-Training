@@ -474,10 +474,16 @@ This project is for educational purposes. Please ensure you have appropriate per
 
 ## 🙏 Acknowledgments
 
+This Healthcare Disease Prediction System is developed as part of the **ICAT Project 2026 (3rd Semester)** at the **National University of Technology (NUTECH), Islamabad**.
+
 - Dataset: [Symptom2Disease on Kaggle](https://www.kaggle.com/datasets/niyarrbarman/symptom2disease)
 - Built with open-source ML libraries
 - Inspired by medical NLP research
-- Auhor: **Muhammad Hassan**
+
+**Authors:**  
+- Muhammad Hassan  
+- Abdullah Tahir  
+- Hassan Khawaja
 
 ---
 
