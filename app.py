@@ -651,7 +651,7 @@ if __name__ == '__main__':
     
     # Run the app
     print("\n" + "="*80)
-    print("Healthcare Disease Prediction System")
+    print("HealthPredict - AI-Powered Disease Prediction System")
     print("="*80)
     print("🚀 Starting Flask application...")
     print("Access the application at: http://localhost:5000")
