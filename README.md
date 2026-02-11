@@ -145,24 +145,19 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab'); nltk
 
 ## 💻 Usage
 
-### Option 1: Use Pre-trained Models (Quick Start)
-
-If models are already trained and saved in `models/` folder:
-
-```bash
-# Start the web application
-python app.py
-
-# Open browser and go to:
-http://localhost:5000
-```
-
-### Option 2: Train Models First
-
-If you want to train models yourself:
+### Train Models First
 
 1. **Train the models** (see [Model Training](#model-training) section)
 2. **Run the web app** (see [Web Application](#web-application) section)
+
+### Create the database/ folder
+
+1. Make sure you are in project main directory
+2. Create a folder:
+
+```bash
+   mkdir database
+   ```
 
 ---
 
@@ -216,7 +211,7 @@ After training, the `models/` folder will contain:
 ### Starting the Application
 
 ```bash
-# Make sure you're in the project directory and venv is activated
+# Make sure you're in the project directory and venv is activated. Run the Web Application:
 python app.py
 ```
 
@@ -229,6 +224,9 @@ You should see:
 🚀 Starting Flask application...
 📍 Access the application at: http://localhost:5000
 ================================================================================
+
+# Open browser and go to:
+http://localhost:5000
 ```
 
 ### Using the System
